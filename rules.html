@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #050e2d;
+        }
+        .layout{
+            width: 600px;
+            margin: auto;
+        }
+        .accordion{
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: #1aeeef;
+            border-radius: 10px;
+        }
+        .accordion__question p{
+            margin: 5px;
+            padding: 0;
+            font-family: 'East Sea Dokdo', cursive;
+            font-size: 30px;
+        }
+        .accordion__answer p{
+            margin: 5px;
+            padding: 10px;
+            font-size: 20px;
+            font-family: 'East Sea Dokdo', cursive;
+            color: black;
+            background: #1aeeef;
+            border-radius: 10px;
+        }
+        .accordion:hover{
+            cursor: pointer;
+        }
+        .accordion__answer {
+            display: none;
+        }
+        .accordion.active .accordion__answer {
+            display: block;
+        }
+        h3{
+            font-family: 'East Sea Dokdo', cursive;
+        }
+        h2{
+            font-family: 'East Sea Dokdo', cursive;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color:blue; text-align:center">RULES AND REGULATIONS</h2>
+    <div class="layout">
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>RULES AND REGULATIONS OF TDM TOURNAMENT</p>
+
+            </div>
+            <div class="accordion__answer">
+                <h3>ALLOWED</h3> 
+<p># (M416 OR SCRL) OR (KAR98 OR M24) AS PER TOURNAMENT ANNOUNCEMENT</p>
+<p># LVL 3 VEST AND HELMET ALLOWED</p> 
+<p># SELF GRENADE ALLOWED STUN ALLOWED </p>
+
+ <h3>NOT ALLOWED </h3>
+<p># PISTOL NOT ALLOWED </p>
+<p># PAN NOT ALLOWED </p>
+<p># DROP GUN AWM AND M249 NOT ALLOWED</p>
+<p># PUNCH ENEMY NOT ALLOWED </p>
+<p># NO SILDE </p>
+<p># GLACIER HIT EFFECT OFF</p> 
+
+<p>ALL THE BEST GUYS KEEP COME ON TIME OTHERWISE I LL DISQUALIFIED THE TOTAL TEAM </p>
+
+<p>IF UR TEAM USING PISTOL AND PAN KILL THE ENEMY, 4 MEMBERS DISQUALIFIED </p>
+<p>PLEASE READ CARE FULLY PRANDS.</p>
+
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Rules and Regulations for Scrims</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>Join Before 5 Mins To Avoid Slot Issues</p>
+                <p>TROLLING NOT ALLOWED</p>
+                <p>No Pan Fisting and Emotes</p>
+                <p>Clan tag or Players List Should be Mandatory</p>
+                <p>Incase any New Player is Coming, You Should Inform Before prior</p>
+                <p>Player Level Must be Above 40</p>
+                <p>IPAD Players are Not Allowed If We Have any doubt you should submit POV</p>
+                <p>If you didn't follow the rules U will be banned for 1 day if same team continues it may lead to Permanent ban </p>
+                <p>Wasting Slot Means U will not get slots in further scrims in Wizo Esports</p>
+                <p>Missing Matches leads to team Disqualification</p>
+                <p>No time change will be done in match Starting time</p>
+                <p>Avoid early Fight</p>
+                <p>Take SS for Every match for Safety</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        let answers=document.querySelectorAll(".accordion");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
+</body>
+</html>
